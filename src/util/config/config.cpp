@@ -435,7 +435,7 @@ namespace dxvk {
      * Disabling support for DF texture formats
      * makes the game use a better looking render
      * path for mirrors                           */
-    { R"(\\GTAIV\.exe$)", {{
+    { R"(\\(GTAIV|EFLC)\.exe$)", {{
       { "d3d9.customVendorId",              "1002" },
       { "dxgi.emulateUMA",                  "True" },
       { "dxgi.maxFrameRate",                  "30" },
