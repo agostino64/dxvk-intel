@@ -441,6 +441,10 @@ namespace dxvk {
       { "dxgi.maxFrameRate",                  "30" },
       { "d3d9.supportDFFormats",            "False" },
     }} },
+    /* GTA V performance issues                   */
+    { R"(\\GTA5\.exe$)", {{
+      { "d3d11.cachedDynamicResources",     "vi"   },
+    }} },
     /* Battlefield 2 (bad z-pass)                 */
     { R"(\\BF2\.exe$)", {{
       { "d3d9.longMad",                     "True" },
