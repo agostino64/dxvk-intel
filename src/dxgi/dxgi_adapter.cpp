@@ -288,7 +288,7 @@ namespace dxvk {
     // NVAPI or AGS/atiadlxx support.
     // Report our device memory as shared memory,
     // and some small amount for the carveout.
-    if (options->emulateUMA && !m_adapter->isUnifiedMemoryArchitecture()) {
+    if (!m_adapter->isUnifiedMemoryArchitecture()) {
       sharedMemory = deviceMemory;
       deviceMemory = 128 * (1 << 20);
     }

@@ -30,9 +30,6 @@ namespace dxvk {
     VkDeviceSize maxDeviceMemory;
     VkDeviceSize maxSharedMemory;
 
-    /// Emulate UMA
-    bool emulateUMA;
-
     /// Enables nvapi workaround
     bool nvapiHack;
   };
