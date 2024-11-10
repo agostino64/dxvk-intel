@@ -1,4 +1,5 @@
 #include <version.h>
+#include <buildenv.h>
 
 #include "dxvk_instance.h"
 #include "dxvk_openvr.h"
@@ -12,6 +13,7 @@ namespace dxvk {
   DxvkInstance::DxvkInstance() {
     Logger::info(str::format("Game: ", env::getExeName()));
     Logger::info(str::format("DXVK: ", DXVK_VERSION));
+    Logger::info(str::format("Build: ", DXVK_TARGET, " ", DXVK_COMPILER, " ", DXVK_COMPILER_VERSION));
 
     m_config = Config::getUserConfig();
     m_config.merge(Config::getAppConfig(env::getExePath()));

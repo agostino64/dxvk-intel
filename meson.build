@@ -119,6 +119,16 @@ dxvk_version = vcs_tag(
   output: 'version.h',
 )
 
+conf_data = configuration_data()
+conf_data.set('BUILD_COMPILER', cpp.get_id())
+conf_data.set('BUILD_COMPILER_VERSION', cpp.version())
+conf_data.set('BUILD_TARGET', cpu_family)
+dxvk_buildenv = configure_file(
+  configuration : conf_data,
+  input:  'buildenv.h.in',
+  output: 'buildenv.h',
+)
+
 subdir('src')
 
 enable_tests = get_option('enable_tests')
