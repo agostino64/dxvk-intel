@@ -16,7 +16,6 @@ DXVK_ARCHIVE_PATH=$(realpath "$2")"/dxvk-$DXVK_VERSION.tar.gz"
 
 if [ -e "$DXVK_BUILD_DIR" ]; then
   echo "Build directory $DXVK_BUILD_DIR already exists"
-  exit 1
 fi
 
 shift 2
@@ -25,7 +24,7 @@ opt_nopackage=0
 opt_devbuild=0
 opt_buildid=false
 opt_64_only=0
-opt_32_only=0
+opt_32_only=1
 
 crossfile="build-win"
 
