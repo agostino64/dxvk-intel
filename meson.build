@@ -49,6 +49,12 @@ if cpu_family == 'x86'
   ]
 endif
 
+if get_option('optimized_build')
+  link_args += [
+    '-O2',
+  ]
+endif
+
 add_project_arguments(cpp.get_supported_arguments(compiler_args), language: 'cpp')
 add_project_arguments(cc.get_supported_arguments(compiler_args), language: 'c')
 add_project_link_arguments(cpp.get_supported_link_arguments(link_args), language: 'cpp')
