@@ -435,6 +435,7 @@ namespace dxvk {
     { R"(\\GTAIV\.exe$)", {{
       { "d3d9.customVendorId",              "1002" },
       { "dxgi.emulateUMA",                  "True" },
+      { "dxgi.maxFrameRate",                  "30" },
     }} },
     /* Battlefield 2 (bad z-pass)                 */
     { R"(\\BF2\.exe$)", {{
