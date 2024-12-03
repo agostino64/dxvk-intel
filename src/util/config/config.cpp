@@ -439,7 +439,7 @@ namespace dxvk {
     { R"(\\(GTAIV|EFLC)\.exe$)", {{
       { "d3d9.customVendorId",              "1002" },
       { "dxgi.maxDeviceMemory",             "128" },
-      { "dxgi.maxFrameRate",                  "30" },
+      { "d3d9.maxFrameRate",                  "30" },
       { "d3d9.supportDFFormats",            "False" },
     }} },
     /* GTA V performance issues                   */
