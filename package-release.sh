@@ -24,7 +24,7 @@ opt_nopackage=0
 opt_devbuild=0
 opt_buildid=false
 opt_64_only=0
-opt_32_only=1
+opt_32_only=0
 
 crossfile="build-win"
 
